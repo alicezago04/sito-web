@@ -305,3 +305,30 @@
         .doc-card {
             animation: fadeIn 0.5s ease-out;
         }
+
+        /* Nasconde PB e RTB */
+            #product-baseline,
+            #rtb {
+              display: none;
+              visibility: hidden;
+              height: 0;
+              margin: 0;
+              padding: 0;
+            }
+            
+            /* Evita spazi vuoti o scroll strani */
+            html, body {
+              scroll-behavior: smooth;
+            }
+            
+            .section {
+              margin-top: 40px; /* regola lo spazio tra sezioni visibili */
+            }
+
+            /* Disabilita i link */
+            .disabled-link {
+              color: gray;
+              pointer-events: none;
+              cursor: default;
+              text-decoration: none;
+            }
